@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocBot - Simplify Your Documents</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #5b9bd5, #42a5f5);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 12px;
+    }
+    .hero-section h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    .feature-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .chat-box {
+      height: 300px;
+      overflow-y: auto;
+      background: #f4f6f9;
+      border: 1px solid #e2e6ea;
+      border-radius: 12px;
+    }
+    .btn-primary {
+      background: #42a5f5;
+      border-color: #42a5f5;
+    }
+    .btn-primary:hover {
+      background: #318ce7;
+    }
+    .footer {
+      background: #04293a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer a {
+      color: #42a5f5;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DocBot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#upload">Upload</a></li>
+          <li class="nav-item"><a class="nav-link" href="#summaries">Summaries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">Recommendations</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section mb-5">
+    <div class="container">
+      <h1>Welcome to DocBot</h1>
+      <p class="lead">Simplify complex documents into actionable insights.</p>
+      <a href="#upload" class="btn btn-light btn-lg shadow">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="container">
+    <!-- Document Upload Section -->
+    <section id="upload" class="mb-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card feature-card p-4">
+            <h3 class="card-title text-center">Document Upload</h3>
+            <p class="text-center">Upload your documents, and let DocBot simplify them in seconds.</p>
+            <form>
+              <div class="mb-3">
+                <label for="fileUpload" class="form-label">Choose a file</label>
+                <input type="file" class="form-control" id="fileUpload">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Upload</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summaries Section -->
+    <section id="summaries" class="mb-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card feature-card p-4">
+            <h3 class="card-title text-center">Simplified Summaries</h3>
+            <p class="text-center">Get easy-to-understand summaries of complex documents.</p>
+            <div class="alert alert-info text-center">Summary will appear here after processing.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Chatbot Section -->
+    <section id="chatbot" class="mb-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card feature-card p-4">
+            <h3 class="card-title text-center">AI Chatbot Assistance</h3>
+            <p class="text-center">Ask questions about your documents and get instant advice.</p>
+            <div class="chat-box p-3 mb-3">Chatbot: How can I help you today?</div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Type your message...">
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="mb-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card feature-card p-4">
+            <h3 class="card-title text-center">Actionable Recommendations</h3>
+            <p class="text-center">Get personalized suggestions based on your document insights.</p>
+            <div class="alert alert-warning text-center">Recommendations will appear here after analysis.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 DocBot. Simplify Your Life. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
